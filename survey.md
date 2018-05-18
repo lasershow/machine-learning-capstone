@@ -10,3 +10,8 @@
 
 `back ground知識の紹介`
 https://www.kaggle.com/c/trackml-particle-identification/discussion/55726
+
+## クラスタリング
+
+hdbscan
+http://hdbscan.readthedocs.io/en/latest/how_hdbscan_works.html
