@@ -15,3 +15,12 @@ https://www.kaggle.com/c/trackml-particle-identification/discussion/55726
 
 hdbscan
 http://hdbscan.readthedocs.io/en/latest/how_hdbscan_works.html
+
+
+## 素粒子
+
+`素粒子とは`
+http://koto-science.hatenablog.com/entry/%E7%B4%A0%E7%B2%92%E5%AD%90
+
+- 粒子加速器
+- 

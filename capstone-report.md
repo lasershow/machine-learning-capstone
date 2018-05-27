@@ -5,6 +5,8 @@ March 21st, 2018
 
 ## Proposal Link
 
+https://review.udacity.com/#!/reviews/1242504
+
 ## I. Definition
 ### Domain Background and Problem Statement
 
@@ -62,6 +64,22 @@ For this time, we can make prediction using DBSCAN which is a type of clustering
 
 In addition, we can measure and verify this prediction with Custom Metric.
 
+`detail`
+
+![](/Users/akihiro/udacity/machine-learning-capstone/report-images/DBSCAN-1.png)
+
+DBSCAN is a density-based clustering algorithm. As shown in the illustration, it is expected that the density of each particle will be smaller if it is the same particle trajectory. DBSCAN can cluster in multidimensional without specifying how many clustering is done beforehand.
+
+https://arxiv.org/pdf/1012.6009.pdf
+
+
+### Benchmark Model
+
+I used the knn approach to check if the problem can be solved.The model with the local score of 0.09900 will be used as benchmark model.
+
+`The following code is forked from the kernel`
+https://www.kaggle.com/lasershow/knn-approach/code
+
 ### Evaluation Metrics
 
 `summary`
@@ -98,11 +116,15 @@ https://github.com/LAL/trackml-library
 
 
 ## II. Analysis
-_(approx. 2-4 pages)_
 
 ### Data Exploration
+
+First of all, I grasp the characteristics of the data mainly using the describe method.
+
 `hits`
 [![https://diveintocode.gyazo.com/246f36c83c4b2daeaf86595dc9364263](https://t.gyazo.com/teams/diveintocode/246f36c83c4b2daeaf86595dc9364263.png)](https://diveintocode.gyazo.com/246f36c83c4b2daeaf86595dc9364263)
+
+The x, y (in millimeter) coordinates range from about -1050 to 1050, respectively. The z coordinate ranges from about -3000 to 3000
 
 `cells`
 [![https://diveintocode.gyazo.com/fc80f5cde88b70f047ff85be0f612cce](https://t.gyazo.com/teams/diveintocode/fc80f5cde88b70f047ff85be0f612cce.png)](https://diveintocode.gyazo.com/fc80f5cde88b70f047ff85be0f612cce)

@@ -145,10 +145,11 @@ So, there is an idea to emphasize this point as preprocessing.
 
 [![https://diveintocode.gyazo.com/15fc43d63b5a5361aa58736fa191d380](https://t.gyazo.com/teams/diveintocode/15fc43d63b5a5361aa58736fa191d380.png)](https://diveintocode.gyazo.com/15fc43d63b5a5361aa58736fa191d380)
 
+※ $x_2,y_2,z_2$ are new features.
 
 `Standardization`
 
-
+The x, z, y coordinates take large values. (1500 to -1500) Therefore, I will standardize.
 
 ### Implementation and validation
 
@@ -167,3 +168,9 @@ Verify using a deep learning approach.
 - LSTMC
 
 ### tuning
+
+Since the DBSCAN algorithm is used in many of the contests, tuning on the DBSCAN algorithm will be described.
+
+The most important parameter is `eps`. `eps` represents the maximum distance between two samples and determines if this distance is the same category.
+
+http://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html
